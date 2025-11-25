@@ -1,0 +1,21 @@
+{
+  "name": "Biblioteca Pessoal",
+  "short_name": "Biblioteca",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2b7a78",
+  "description": "PWA para cadastrar livros, tirar foto da capa e gerenciar status — funciona offline.",
+  "icons": [
+    {
+      "src": "/assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

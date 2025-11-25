@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Biblioteca Pessoal</title>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <div class="app">
+    <div class="left">
+      <h1>Minha Biblioteca</h1>
+      <div id="lista"></div>
+    </div>
+    <div class="right">
+      <div class="card-form">
+        <form id="formLivro">
+          <label for="titulo">Título</label>
+          <input id="titulo" required />
+          <label for="autor">Autor</label>
+          <input id="autor" />
+          <label for="status">Status</label>
+          <select id="status">
+            <option value="Quero ler">Quero ler</option>
+            <option value="Lendo">Lendo</option>
+            <option value="Lido">Lido</option>
+          </select>
+          <div class="preview-wrap">
+            <video id="preview" autoplay playsinline></video>
+            <button type="button" id="btnFoto">Tirar foto</button>
+            <button type="button" id="switchCam" class="secondary">Trocar câmera</button>
+            <img id="fotoPreview" alt="preview da capa" />
+            <canvas id="canvas" style="display:none"></canvas>
+          </div>
+          <div style="display:flex;gap:8px;margin-top:8px;">
+            <button type="button" id="btnSalvar">Salvar livro</button>
+            <button type="reset" class="secondary">Limpar</button>
+          </div>
+        </form>
+      </div>
+      <p style="opacity:0.7">Aplicação PWA — Trabalhe offline. Fotos são salvas no IndexedDB.</p>
+    </div>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

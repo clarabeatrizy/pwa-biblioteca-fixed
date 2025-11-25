@@ -1,0 +1,17 @@
+{
+  "name": "pwa-biblioteca",
+  "version": "1.0.0",
+  "description": "PWA Biblioteca Pessoal - PDM2",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node ./build-sw.js || true",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "idb": "^7.1.1",
+    "workbox-window": "^6.5.4"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
